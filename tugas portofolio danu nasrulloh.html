@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <title>Portofolio Danu Nasrulloh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!----hero Section start---->
+
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Portofo<span>lio</span></h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="btn">Subscribe</a>
+      </nav>
+
+    <div class="content">
+      <h4>Hello, Nama saya</h4>
+      <h1>Danu <span>Nasrulloh</span></h1>
+      <h3>Saya Mahasiswa Universitas Ahmad Dahlan</h3>
+      <div class="newslatter">
+        <form>
+          <input type="email" name="email" id="mail" placeholder="Masukan Email kamu">
+          <input type="submit" name="submit" value="Lets start">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!----About section start---->
+  <section class="about">
+    <div class="main">
+      <img src="Danu.jpg">
+      <div class="about-text">
+        <h2>Tentang Saya</h2>
+        <h5>Mahasiswa Universitas Ahmad Dahlan</h5>
+        <p>Nama saya adalah Danu nasrulloh, Tinggal di provinsi bengkulu kecamatan bengkulu kabupaten bengkulu, saya adalah salah satu siswa Universitas Ahmad Dahlan fakultas teknik industri, Prodi Informatika.<p>
+        <button type="button">Let's Talk</button>
+    </div>
+  </section>
+
+      <!----service section start---->
+    <div class="service">
+      <div class="title">
+        <h2>Our service</h2>
+    </div>
+      <center>
+    <div class="box">
+      <div class="card">
+        <i class="fa-solid fa-bars"></i>
+        <h5>Contact Person</h5>
+        <div class="pra">
+        <p>NO Phone : 08999711098</p>
+        <p>Email    : nasrullahdanu501@gmail.com</p>
+        <p>Instragram : nsrllah_21</p>
+        <p style="text-align: center;">
+          <a class="button" href="#">Read more</a>
+        </p>
+      </div> 
+    </div>
+    <div class="card">
+      <form id="form">
+        <label><font color="white">Username</label>
+        <input type="text" id="username" name="username">
+        <p>
+        <label>Email</label>
+        <input type="text" id="email" name="email">
+        <p>
+        <label>Message</label>
+        <input type="text" id="message" name="message">
+        <p></p>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+      <div id="result"></div>
+       <script>
+    function submitForm() {
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      document.getElementById("result").innerHTML = "Thank you, " + username + "! We have received your message: " + message;
+      document.getElementById("form").reset();
+    }
+      </script>
+      </div>
+      </div>
+      </div>
+  </center>
+  
+
+    <!-----footer start----->
+    <center>
+    <footer>
+      <p>Danu Nasrulloh</p>
+      <div class="social">
+        <a href="https://www.facebook.com/Danu.Nasrullah21"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <p class="end"> Copy right by Danu Nasrulloh</p>
+    </footer>
+  </center>
+</body>
+</html>
